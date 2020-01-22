@@ -13,6 +13,12 @@ pipeline {
         sh 'mvn --projects biojava-alignment test'
       }
     }
-
+    stages {
+      stage('Mainly edited on Github') {
+        steps{
+          sh 'echo "Hello from Jenkins!"'
+        }
+      }
+    }
   }
 }
